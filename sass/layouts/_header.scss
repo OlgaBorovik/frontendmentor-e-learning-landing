@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    margin-bottom: 38px;
+}
+
+.header__button {
+    background-color: var(--headingText);
+    color: var(--white);
+    &:hover,
+    &:focus{
+        background-color: var(--blueGrey);
+    }
+}
+

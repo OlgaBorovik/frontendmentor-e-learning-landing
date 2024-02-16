@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <link href="./css/main.min.css" rel="stylesheet">
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header container">
     <a href="#" class="header__logo">
       <img src="./assets/logo-dark.svg" alt="logo-dark">
     </a>
-    <button class="header__button button">
+    <button class="header__button button" type="button">
       Get Started
     </button>
   </header>
   <main>
-<section class="hero">
+<section class="hero container">
   <h1 class="hero__heading">
     Maximize skill, minimize budget
   </h1>
@@ -30,9 +33,17 @@
   <button class="hero__button button">
     Get Started
   </button>
-  <img src="./assets/image-hero-mobile.png" alt="" class="hero__image">
+  <picture class="hero__image">
+    <source srcset="./assets/image-hero-desktop.png    1x,
+                    ./aseets/image-hero-desktop@2x.png 2x" media="(min-width:1440px)" />
+    <source srcset="./assets/image-hero-tablet.png    1x,
+                    ./assets/image-hero-tablet@2x.png  2x" media="(min-width:768px)" />
+    <source srcset="./assets/image-hero-mobile.png    1x,
+                    ./assets/image-hero-mobile@2x.png 2x" media="(min-width:375px)" />
+    <img class="team-img" src="./images/portrait1.jpg" alt="Игорь Демьяненко">
+  </picture>
 </section>
-<section class="courses">
+<section class="courses container">
   
   <ul class="courses__list">
     <li class="courses item">
@@ -97,7 +108,7 @@
 
 </section>
   </main>
-<footer class="footer">
+<footer class="footer container">
   <a href="#" class="header__logo">
     <img src="./assets/logo-light.svg" alt="logo-light">
   </a>

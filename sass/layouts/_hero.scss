@@ -1,0 +1,35 @@
+// .hero {}
+
+.hero__heading {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--headingText);
+    margin-bottom: 26px;
+}
+
+.hero__text {
+    font-weight: 500;
+    line-height: 1.62;
+    margin-bottom: 24px;
+}
+
+.hero__button {
+    width: 167px;
+    height: 56px;
+    color: var(--white);
+    background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    margin-bottom: 46px;
+    &:hover,
+    focus {
+
+        opacity: 0.5;
+    }
+}
+
+
+
+.hero__image {
+    max-width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+}

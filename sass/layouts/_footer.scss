@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    height: 120px;
+    background-color: var(--headingText);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.footer__button {
+    background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+    color: var(--white);
+    &:hover,
+    &:focus {
+            background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%), rgba(255, 255, 255, 0.5);
+        }
+}
+

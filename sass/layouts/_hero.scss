@@ -44,8 +44,8 @@ background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 2
     margin-right: auto;
     @include tablet{
         position: absolute;
-        top: -40px;
-        left: 200px;
+        top: 0;
+        left: 0;
         width: 640px;
         overflow: hidden;
 

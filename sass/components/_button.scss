@@ -6,4 +6,9 @@
     font-weight: 700;
     line-height: 1.75;
     cursor: pointer;
+    @include desktop{
+        width: 167px;
+        height: 56px;
+        font-size: 18px;
+    }
 }

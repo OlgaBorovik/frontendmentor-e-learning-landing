@@ -62,14 +62,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 689px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    width: 1110px;
   }
 }
 
@@ -81,6 +79,13 @@ body {
   font-weight: 700;
   line-height: 1.75;
   cursor: pointer;
+}
+@media screen and (min-width: 1440px) {
+  .button {
+    width: 167px;
+    height: 56px;
+    font-size: 18px;
+  }
 }
 
 .header {
@@ -154,8 +159,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero__image {
     position: absolute;
-    top: -40px;
-    left: 200px;
+    top: 0;
+    left: 0;
     width: 640px;
     overflow: hidden;
   }
@@ -180,9 +185,14 @@ body {
     margin-left: -11px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .courses__list {
+    margin-left: -30px;
+  }
+}
 
 .courses__item {
-  flex-basis: 343px;
+  max-width: 343px;
 }
 .courses__item:not(:last-child) {
   margin-bottom: 40px;
@@ -202,7 +212,7 @@ body {
     margin-left: 30px;
   }
   .courses__item:not(:last-child) {
-    margin-bottom: 56px;
+    margin-bottom: 80px;
   }
 }
 

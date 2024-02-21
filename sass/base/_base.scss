@@ -16,12 +16,11 @@ body{
             }
         
             @include tablet {
-                width: 768px;
-                padding-left: 40px;
-                padding-right: 40px;
+                width: 689px;
+                
             }
         
             @include desktop {
-                max-width: 1440px;
+                width: 1110px;
             }
 }

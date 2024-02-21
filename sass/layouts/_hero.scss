@@ -31,9 +31,8 @@
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
     margin-bottom: 46px;
     &:hover,
-    focus {
-
-        opacity: 0.5;
+    &:focus {
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%), rgba(255, 255, 255, 0.5);
     }
 }
 

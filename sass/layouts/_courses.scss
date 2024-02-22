@@ -64,6 +64,9 @@
         padding-top: 56px;
         padding-left: 32px;
     }
+    @include desktop{
+        padding: 64px 32px 40px 32px;
+    }
 }
 
 .courses__title {
@@ -73,6 +76,9 @@
         line-height: 1.33;
         text-align: left;
         vertical-align: middle;
+        @include desktop{
+            font-size: 32px;
+        }
 }
 
 
@@ -83,6 +89,9 @@
     background-color: var(--white);
     padding: 56px 28px 32px 28px;
     width: 100%;
+    @include desktop{
+        padding: 64px 32px 40px 32px;
+    }
    
 }
 
@@ -93,16 +102,23 @@
         font-weight: 800;
         line-height: 1.25;
         margin-bottom: 16px;
+        @include desktop{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
     }
 
 .box__text {
     line-height: 1.62;
     margin-bottom: 24px;
+    @include desktop{
+        font-size: 18px;
+    }
 }
 
 .box__link {
     
-    font-weight: 700;
+font-weight: 700;
  font-size:18px;
 line-height: 1.56;
 cursor: pointer;

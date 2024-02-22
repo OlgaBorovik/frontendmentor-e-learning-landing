@@ -55,9 +55,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .container {
-    max-width: 375px;
+    width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -151,19 +151,59 @@ body {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%), rgba(255, 255, 255, 0.5);
 }
 
-.hero__image {
-  width: 327px;
+.hero-image__box {
+  max-width: 327px;
+  position: relative;
+  padding: 24px 37px;
+  margin-bottom: 66px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
-  .hero__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 640px;
-    overflow: hidden;
-  }
+
+.hero-image__box--up {
+  border-radius: 10px;
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+  /* FFFFFF */
+  background: rgb(255, 255, 255);
+  padding: 16px 20px;
+  width: 105px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero-image__box--down {
+  border-radius: 10px;
+  box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+  /* FFFFFF */
+  background: rgb(255, 255, 255);
+  padding: 16px 20px;
+  width: 155px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-image__title {
+  color: rgb(131, 134, 154);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.hero-image__text {
+  color: rgb(19, 24, 63);
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .courses {
@@ -235,6 +275,11 @@ body {
     padding-left: 32px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .courses__heading {
+    padding: 64px 32px 40px 32px;
+  }
+}
 
 .courses__title {
   color: var(--white);
@@ -243,6 +288,11 @@ body {
   line-height: 1.33;
   text-align: left;
   vertical-align: middle;
+}
+@media screen and (min-width: 1440px) {
+  .courses__title {
+    font-size: 32px;
+  }
 }
 
 .courses__box {
@@ -253,6 +303,11 @@ body {
   padding: 56px 28px 32px 28px;
   width: 100%;
 }
+@media screen and (min-width: 1440px) {
+  .courses__box {
+    padding: 64px 32px 40px 32px;
+  }
+}
 
 .box__title {
   color: var(--headingText);
@@ -261,10 +316,21 @@ body {
   line-height: 1.25;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1440px) {
+  .box__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
 
 .box__text {
   line-height: 1.62;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .box__text {
+    font-size: 18px;
+  }
 }
 
 .box__link {

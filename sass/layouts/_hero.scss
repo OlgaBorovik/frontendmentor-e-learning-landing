@@ -3,6 +3,10 @@
         display: flex;
         margin-bottom: 80px;
         position: relative;
+        
+    }
+    @include desktop{
+        margin-bottom: 120px;
     }
 }
 
@@ -11,6 +15,9 @@
         width: 398px;
         position: relative;
     }
+    @include desktop {
+        width: 457px;
+    }
 }
 
 .hero__heading {
@@ -18,12 +25,20 @@
     font-size: 40px;
     color: var(--headingText);
     margin-bottom: 26px;
+    @include desktop{
+        font-size: 56px;
+        margin-bottom: 30px;
+    }
 }
 
 .hero__text {
     font-weight: 500;
     line-height: 1.62;
     margin-bottom: 24px;
+    @include desktop{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
 }
 
 .hero__button {
@@ -63,25 +78,29 @@
         left: 386px;
         top: -210px;
         overflow: hidden;
-
+    }
+    @include desktop{
+        display: none;
     }
 }
 
-// .hero-image__image {
-//     position: absolute;
-// }
+.hero-image__box--desktop{
+    display: none;
+    @include desktop{
+        display: block;
+        position: absolute;
+        left: 600px;
+        top: -350px;
+        overflow: hidden;
+    }
+}
 
-// .hero-image__box--bg{
-//     width: 216px;
-//     height: 688px;
-//     border-radius: 158.5px;
-//     background: linear-gradient(180.00deg, rgb(72, 81, 255), rgb(240, 42, 166) 100%);
-//     rotate: 45deg;
-//     position: absolute;
-//     top:0;
-//     left: 100px;
+.hero-image__image{
+    display: block;
+    overflow: hidden;
+}
 
-// }
+
 .hero-image__box--up {
     border-radius: 10px;
     box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);

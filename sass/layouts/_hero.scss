@@ -3,10 +3,11 @@
         display: flex;
         margin-bottom: 80px;
         position: relative;
-        
+
     }
-    @include desktop{
-        margin-bottom: 120px;
+
+    @include desktop {
+        margin-bottom: 200px;
     }
 }
 
@@ -15,6 +16,7 @@
         width: 398px;
         position: relative;
     }
+
     @include desktop {
         width: 457px;
     }
@@ -25,7 +27,8 @@
     font-size: 40px;
     color: var(--headingText);
     margin-bottom: 26px;
-    @include desktop{
+
+    @include desktop {
         font-size: 56px;
         margin-bottom: 30px;
     }
@@ -35,7 +38,8 @@
     font-weight: 500;
     line-height: 1.62;
     margin-bottom: 24px;
-    @include desktop{
+
+    @include desktop {
         font-size: 18px;
         margin-bottom: 40px;
     }
@@ -73,21 +77,25 @@
     display: none;
 
     @include tablet {
+        width: 50%;
         display: block;
         position: absolute;
-        left: 386px;
+        left: 345px;
         top: -210px;
         overflow: hidden;
     }
-    @include desktop{
+
+    @include desktop {
         display: none;
     }
 }
 
-.hero-image__box--desktop{
+.hero-image__box--desktop {
     display: none;
-    @include desktop{
+
+    @include desktop {
         display: block;
+        width: 50%;
         position: absolute;
         left: 600px;
         top: -350px;
@@ -95,7 +103,7 @@
     }
 }
 
-.hero-image__image{
+.hero-image__image {
     display: block;
     overflow: hidden;
 }
